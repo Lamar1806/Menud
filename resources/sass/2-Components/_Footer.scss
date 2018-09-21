@@ -1,0 +1,56 @@
+.LandingPage .Landing_Page_Footer{
+    position: relative;
+    background-color: $blue-dark;
+    background-position: center;
+    background-repeat: no-repeat;
+    // background going to take some playing around wiht
+    //percents is the way it will be done for me to 
+    background-size: 100% 100% ;
+    margin-top: -2px;
+    padding: 0 2rem;
+
+    .row{
+        padding-top: 8rem;
+        padding-bottom: 10rem;
+    }
+    .logo{
+        position: relative;
+        top: 3rem;
+        left: 3rem;
+        width: 3.6rem;
+    } 
+    .Call_To_Action{
+        color: $black;
+        margin-bottom: 2rem;
+        letter-spacing: 1.2px;
+    }
+    .col-1{
+        @include grid-column(6);
+        @include grid-shift(-.5);
+        position: relative;
+        top: 15rem;
+        text-align: center;
+    }
+    .col-2{
+        @include grid-column(6);
+    }
+    .phones_3{
+
+    }       
+    .social-media{
+        position: absolute;
+        right: 48px;
+        bottom: 48px;
+        li{
+            display: inline-block;
+            img{
+                height: 2rem;
+                width: 2rem;
+            }
+        }
+        li:not(:last-of-type){
+            margin-right: 20px;
+        }
+        
+    }
+}

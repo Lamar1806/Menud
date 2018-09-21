@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAiB,cAAH,GAAG,GAAG,CAAC;EACnB,MAAM,EAAE,IAAI;CACb",
+    "sources": [
+        "ionicons-site.scss"
+    ],
+    "names": [],
+    "file": "ionicons-site.css"
+}

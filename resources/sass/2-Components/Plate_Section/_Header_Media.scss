@@ -1,0 +1,49 @@
+
+@media all and (max-width: 1428px) {
+    .Plate_Section .PS_Header{
+        .img_Jessie{
+            margin-left: 3rem;
+        }
+    }
+}
+@media all and (max-width: 776px) {
+    .Plate_Section .PS_Header{
+        padding: 6rem 2rem;
+        text-align: center;
+        height: 75rem;
+        margin-bottom: -5rem;
+        .img_Jessie{   
+            float: none;
+            display: inline-block;              
+            position: relative;
+            margin-right: 0;
+            margin-left: 0;
+        }  
+        .plateDiscription{
+            display: block;
+            margin-top: -7rem;
+        }  
+
+    }
+} 
+@media all and (max-width: 389px) {
+    .Plate_Section .PS_Header{
+        margin-bottom: -15rem;
+        .img_Jessie{   
+           width: 25rem;
+        }  
+        .author{
+           font-size: 2rem;
+        }  
+        .plateList_title{
+            font-size: 3rem;
+        }
+        .btn{
+            position: relative;
+            font-size: 1.8rem; 
+            display: block;
+            margin-bottom: 2rem;
+            left: 2rem;
+        } 
+    }
+} 

@@ -1,0 +1,45 @@
+@media all and (max-width: 1445px) {
+    .Plate_Section .Plate_Table{
+        &_Col_Icon{
+            
+            padding-left: 2.5rem;
+        }
+    }
+}
+@media all and (max-width: 1440px) {
+    .Plate_Section .Plate_Table{
+       padding-left: .5rem;
+        &_CTA {
+            padding-left: 1rem;
+        }
+    }
+}
+@media all and (max-width: 860px) {
+    .Plate_Section .Plate_Table{
+        position: relative;
+        z-index: 4;
+        .row:last-of-type{
+            max-width: 100%;
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+        &_CTA{
+            left: 0;
+        }
+        &_CTA_img{
+            right: 2rem;
+        } 
+    }
+}
+@media all and (max-width: 714px) {
+    .Plate_Section .Plate_Table{
+        &_CTA{
+           font-size: 1.6rem;
+           max-width: 90%;
+        }
+        &_CTA_img{
+            width: 3rem;
+        } 
+    
+    }
+}

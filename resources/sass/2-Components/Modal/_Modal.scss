@@ -1,0 +1,46 @@
+.Modal{
+    position: fixed;
+    z-index: 20;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: .9;
+    max-width: 60rem;
+    width: 100%;
+    letter-spacing: 1.3px;
+    .row{
+        display: block;
+        background: $blue-light;
+        padding: 3rem 2rem;
+        text-align: center;
+    }
+    .SMS_Form{
+        font-size: 2rem;
+       
+        .SMS_Greeting{
+            font-size: 4rem;
+            margin-bottom: 2rem;
+            
+        }
+        .SMS_Lable{
+            display: block;
+            margin-bottom: 1.5rem
+        }
+        .SMS_Input{
+            display: inline-block;
+            margin-bottom: 2rem;
+            width: 10rem;
+            
+        }
+        .SMS_Submit{
+            padding: 1rem 2rem;
+            border-radius: 3rem;
+            border: none; 
+            background: $yellow;
+            text-transform: uppercase;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+}    

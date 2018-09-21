@@ -1,0 +1,47 @@
+.Plate_Section .Plate_Table .Plate_Container{
+    background-color: $blue-light;
+    width: 165px;
+    height: 184px;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    vertical-align:top; 
+    white-space: normal;  
+    background-color: #152435;	
+    box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.5);
+    .Plate_Img{
+        display: block;
+        height: 73px;	
+        width: 165px;
+    }
+    .Plate_Title{     
+        // white-space: wrap;   
+        font-size: 1.2rem;    
+        margin-top: 1rem;
+        margin-bottom: 1rem; 
+        padding: 0 .5rem; 
+    }
+    .Plate_Info{
+        position: absolute;
+        width: 90%;
+        bottom: 5%;
+        left: 5%;
+        font-size: 1.2rem; 
+
+    }
+    .Timer_Img{
+       display: inline-block;
+       position: relative;
+       margin-left: -10rem;
+
+    }
+    .Plate_Hr{
+        border: 0.5px solid #979797;
+        margin: 3px 0;
+    } 
+    .Plate_HashTag{
+        text-align: left;
+        
+        font-size: 1rem; 
+    }
+}

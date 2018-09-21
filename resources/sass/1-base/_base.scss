@@ -1,0 +1,31 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    // border: 1px solid red;
+}
+//commented out to keep page from going
+//back to top...
+html,body{
+    // position: relative;
+    background: rgb(255, 255, 255);
+    font-family: $lato;
+    font-size: 10px;
+    color: $main-text; 
+    // height: 100%; 
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch; 
+}
+
+.row{
+    position: relative;
+    max-width: 140rem;
+    margin: 0 auto;
+    // height: 100%;
+    font-size: 1.8rem;
+    @include grid-container;
+}
+a{
+    text-decoration: none;
+    color: $main-text;
+}

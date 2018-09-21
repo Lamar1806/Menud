@@ -1,0 +1,145 @@
+.Plate_Section .Plate_Table{
+    position: relative;
+    background: linear-gradient($table-start, $table-end);
+    width: 100%;
+    text-align: center;
+    // padding: 0 2rem;
+    margin-top: -2px;
+    padding-bottom: 2rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    .row{
+        max-width: 1920px;
+        width: 1920px;
+        white-space: nowrap;
+        // height: 10rem
+    }    
+    .Days_Row{
+        position: relative;
+        width: 100%;
+        min-width: 1461px;
+        border-bottom: none;
+        background-color: $blue-table-header;
+        z-index: 2;
+    }    
+    .Meal_Row{
+        height: 213px;
+        // margin-bottom: 32px;
+    }
+    //Not Days Row
+    .row:not(:first-of-type){
+        padding: 1rem 0;  
+        max-width: 1428px;
+    }
+    //CTA row
+    .row:last-of-type{
+        text-align: left;
+        top: 0;
+        left: 0;
+        height: 5rem; 
+        border-bottom: none;
+    }    
+
+
+    &_Col_Icon{
+        display: block;
+        position: sticky;
+        left: -5px;
+        z-index: 20;
+        display: inline-block;
+        width: 4.8rem;	
+        height: 213px;
+        background: $blue-dark;
+        img{ 
+            position: relative;
+            width: 2.8rem; 
+            top: 94px;
+            left: -1.3rem;
+        } 
+    }
+
+
+    &_Col_Plate{
+        display: inline-block;
+        position: relative;
+        margin-right: 3rem;
+    }
+
+    //last Row Describ
+    .CTA_Row{
+        position: relative;
+        max-width: 100%; 
+        width: 100%; 
+        background: $blue-dark;
+        z-index: 2;
+    }  
+    &_CTA{
+        display: inline-block;
+        font-size: 1.8rem;
+        letter-spacing: 1.2px;    
+        left: 10%;
+        white-space: normal;
+    }
+    &_CTA_img{
+        position: absolute;
+        display: inline-block;
+        right: 10rem;
+    }
+
+    //*******************************************//
+    //Lines
+    &_Left_Line{
+        position: absolute;
+        border: 1px solid $line-color;	
+        opacity: 0.85;
+        width: 1px;
+        height: 30rem;
+        top: -4.2rem;  
+        right: -1.6rem;
+        z-index: 0;
+    }  
+    .Icon_Line_Left{
+        height: 255px;
+        left: -1rem;
+        top: 0; 
+    } 
+    .divider_line_row {	
+        box-sizing: border-box;	height: 2px;
+        width: 1415px;
+        border: 1px solid #979797;
+        opacity: 0.3;
+        position: relative;
+        top: -8px;
+        left: -8px;
+        z-index: 999999;
+    }
+    //Third row
+    .row:nth-of-type(4) {
+        .Plate_Table_Left_Line{
+            height: 23rem;
+        }
+    }
+ 
+    //*******************************************//
+    //Days
+    &_Days_Empty{
+        display: inline-block;
+        width: 0px;
+        background-color: $blue-table-header;
+        font-size: 1.8rem;
+        padding: 1.5rem 0;
+    }
+    &_Days{
+        display: inline-block;
+        width: 194px;
+        background-color: $blue-table-header;
+        font-size: 1.8rem;
+        padding: 1.5rem 0;
+    } 
+    //Wed
+    &_Days:nth-of-type(2){
+        position: relative;
+        margin-left: -1rem; 
+    }
+}

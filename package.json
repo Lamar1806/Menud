@@ -1,0 +1,26 @@
+{
+  "name": "menud",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.18.0",
+    "branch-sdk": "^2.46.0",
+    "eslint": "^5.6.0",
+    "react": "^16.5.0",
+    "react-dom": "^16.5.0",
+    "react-media": "^1.8.0",
+    "react-scripts": "1.1.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "compile-sass": "node-sass resources/sass/app.scss src/App.css",
+    "compile-sass-w": "node-sass resources/sass/app.scss src/App.css -w"
+  },
+  "devDependencies": {
+    "node-sass": "^4.9.3",
+    "react-helmet": "^5.2.0"
+  }
+}

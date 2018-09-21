@@ -1,0 +1,61 @@
+.LandingPage .Landing_Header{
+    background-color: $blue-dark;
+    text-align: center;
+    padding: 6rem 0;
+    position: relative;
+    z-index: 2;
+    .row{
+        max-width: 100%;
+    } 
+    &-h1{
+        margin: 3rem 0;
+        font-size: 3rem;
+        letter-spacing: 1.3px;
+    }
+    &-p{         
+        display: inline-block;
+        font-size: 2.5rem;
+        max-width: 50ch;
+    }
+
+    .triangle_container{
+        position: absolute;
+        top: 50%;
+        right: -11%;
+        transform: translateY(-35%) rotate(90deg);
+    }
+
+    .triangle {
+        margin: 100px;
+        position: relative;
+        background-color: $triangle-Yellow;
+        text-align: left; 
+        z-index: 0;
+      }
+      
+      .triangle:before,
+      .triangle:after {
+          content: '';
+          position: absolute;
+          background-color: inherit;
+      }
+      
+      .triangle,
+      .triangle:before,
+      .triangle:after {
+          width:  28rem;
+          height: 28rem; 
+          border-top-right-radius: 30%;
+      }
+      
+      .triangle {
+          transform: skewX(-30deg) scale(1,.866);
+      }
+      
+      .triangle:before {
+          transform: rotate(-135deg) skewX(-45deg) scale(1.414,.707) translate(0,-50%);
+      }
+      .triangle:after {
+          transform: rotate(135deg) skewY(-45deg) scale(.707,1.414) translate(50%);
+      }
+} 

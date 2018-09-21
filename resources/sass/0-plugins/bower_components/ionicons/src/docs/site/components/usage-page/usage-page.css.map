@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,UAAU,CAAC;EACT,MAAM,EAAE,IAAI;CASb;;AAVD,AAGE,UAHQ,CAGR,QAAQ,CAAC;EACP,cAAc,EAAE,KAAK;CACtB;;AALH,AAOE,UAPQ,CAOR,KAAK,CAAC;EACJ,KAAK,EAAE,OAAO;CACf",
+    "sources": [
+        "usage-page.scss"
+    ],
+    "names": [],
+    "file": "usage-page.css"
+}

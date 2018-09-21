@@ -1,0 +1,35 @@
+//Text Colors
+// $main-text: #555;
+$main-text: #b3b3b3;
+$blue-dark: #020d1b;
+$blue-light: #14202f;
+
+$yellow: #F0C148;
+$triangle-Yellow: #dfb01c;
+$white: #fff;
+$black: #000;
+
+//Plate_Section_header
+$blue-start: #142334;
+$blue-end: #0d1928;
+
+//Plate_Section_Plates
+$blue-table-header: #142334;
+$line-color: #3C4049;
+$table-start: #0a1725;
+$table-end: #020a15;
+$line-color: #29323c;
+
+
+//font-family
+$lato: Lato, sans-serif;
+
+//grid
+$Plate_Table_Days: (
+  columns: 12,
+  gutter: 0px,
+);
+$plate-grid: (
+  columns: 12,
+  gutter: 15px,
+);

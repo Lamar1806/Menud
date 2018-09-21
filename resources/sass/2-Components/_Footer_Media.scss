@@ -1,0 +1,110 @@
+@media all and (min-width: 1701px ) {
+    .LandingPage .Landing_Page_Footer{
+        .col-1{
+            @include grid-push(-1);
+            position: relative;
+            top: 15rem;
+        }
+        .col-2{
+            img{
+               width: 995px;
+               height: 484px;
+            }
+        }
+    }
+} 
+@media all and (max-width: 1500px) {
+    .LandingPage .Landing_Page_Footer{
+        .col-2{
+            text-align: center;
+            img{
+                display: inline-block;
+                width: 90%;
+            }
+        }
+    }
+} 
+@media all and (max-width: 1700px) {
+    .LandingPage .Landing_Page_Footer{
+        .col-1{
+            top: 10rem;
+        }
+    }
+}
+@media all and (max-width: 972px) {
+    .LandingPage .Landing_Page_Footer{
+        .col-1{
+            top: 7rem;
+        }
+    }
+}
+@media all and (max-width: 862px) {
+    .LandingPage .Landing_Page_Footer{
+        .col-1{
+            top: 7rem;
+        }
+    }
+}
+@media all and (max-width: 840px) {
+    .LandingPage .Landing_Page_Footer{        
+        background-size: 100% 115%;
+        .col-1{
+            @include grid-column(12);
+            position: relative;
+            top: 26rem;
+            @include grid-shift(0);
+        }
+        .col-2{
+            @include grid-column(12);
+            position: relative;
+            top: -18rem;
+            img{
+                width: 50%;
+                min-width: 28rem
+            }
+        }
+        .social-media{
+            display: none;
+            /*right: 50%;
+            transform: translate(50%);*/
+        }
+    }
+}
+@media all and (max-width: 730px) {
+    .LandingPage .Landing_Page_Footer{
+        .col-1{
+           top: 22rem;
+        }
+    }
+}
+@media all and (max-width: 630px) {
+    .LandingPage .Landing_Page_Footer{
+        background-size: 100% 115%;
+        .logo{
+            left: 1rem;
+        }
+        .col-1{
+           top: 22rem;
+        }
+    }
+}
+@media all and (max-width: 440px) {
+    .LandingPage .Landing_Page_Footer{
+        .col-1{
+            top: 18rem;
+        }
+        .Call_To_Action{
+           font-size: 2rem;
+        }
+    }
+}
+@media all and (max-width: 332px) {
+    .LandingPage .Landing_Page_Footer{
+        .col-2{
+           left: -2rem;
+        }
+        .Call_To_Action{
+            font-size: 1.8rem;
+        }
+    }
+}

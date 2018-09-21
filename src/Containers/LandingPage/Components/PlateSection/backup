@@ -1,0 +1,56 @@
+    let branchAction = (e) => {
+        if (props.deskTop) {
+            e.preventDefault();
+            //desktop
+            console.log('clicked: ', props.toggleModal);
+            props.toggleModal();
+            // sendSMS(e);
+        }else{
+            //mobile
+            deepLink(e);
+        }
+    }
+
+    let deepLink = (e) => {
+        var linkData = {
+            campaign: 'content 123',
+            channel: 'facebook',
+            feature: 'dashboard',
+            stage: 'new user',
+            tags: [ 'tag1', 'tag2', 'tag3' ],
+            alias: '',
+            data: {
+              'custom_bool': true,
+              'custom_int': Date.now(),
+              'custom_string': 'hello',
+              '$og_title': 'Title',
+              '$og_description': 'Description',
+              '$og_image_url':'http://lorempixel.com/400/400'
+            }
+        };
+
+        Branch.deepview(linkData, function(err) {
+            if (err) {
+                throw err;
+            }
+            document.getElementById(props.pageTag).onClick = Branch.deepviewCta();
+        });
+    }
+
+    let sendSMS = (e) => {
+        e.preventDefault();
+        let phoneNumber = document.getElementById('phone_number').value;
+        // setState({phoneNumber});
+        Branch.sendSMS(
+            phoneNumber,
+            {
+              channel: 'Website',
+              feature: 'Text-Me-The-App',
+              data: {
+                foo: 'bar'
+              }
+            },
+            { make_new_link: false }, // Default: false. If set to true, sendSMS will generate a new link even if one already exists.
+            function(err) { console.log(err); }
+          );
+    }

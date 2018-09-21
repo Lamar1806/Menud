@@ -1,0 +1,53 @@
+.Plate_Section .PS_Header{
+    background: linear-gradient($blue-start, $blue-end);
+    padding: 6rem 2rem;
+    padding-top: 11rem;
+    position: relative;
+    z-index: 2;
+    font-size: 1.8rem;
+    .row{
+        max-width: 1428px;        
+    }  
+    .shared_plan{
+        position: absolute;
+        top: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 1.8rem;
+    }
+    .img_Jessie{
+        float: left;
+        width: 35rem;
+        margin-right: 3rem;
+        margin-left: 0rem;
+    } 
+    .author{
+        font-size: 1.8rem;
+    }
+    .plateDiscription{
+        position: relative;
+        top: 10rem;
+        letter-spacing: 1.2px;
+    }
+    .plateList_title{
+        margin: 3rem 0;
+        font-size: 4.2rem;
+        letter-spacing: 1.3px;
+        color: $white;
+        margin-bottom: 4rem;
+    }
+   .btn{
+       padding: 1.2rem 1.8rem;
+       background-color: $yellow;
+       border-radius: 50rem;
+       color: $black; 
+       margin-right: 2rem;
+       font-weight: 700;
+       letter-spacing: 1.3px;
+       margin-right: 4rem;
+       font-size: 1.6rem;
+   }
+   .dish-icon{
+       margin-right: 1rem;
+   }
+}  
