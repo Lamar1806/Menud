@@ -31,6 +31,11 @@
         }
     }
 }
+@media all and (max-width: 1024px) {
+    .LandingPage .Landing_Page_Footer{
+        background-size: 150% 100% ;
+    } 
+}
 @media all and (max-width: 972px) {
     .LandingPage .Landing_Page_Footer{
         .col-1{
@@ -47,7 +52,7 @@
 }
 @media all and (max-width: 840px) {
     .LandingPage .Landing_Page_Footer{        
-        background-size: 100% 115%;
+        
         .col-1{
             @include grid-column(12);
             position: relative;
@@ -79,7 +84,7 @@
 }
 @media all and (max-width: 630px) {
     .LandingPage .Landing_Page_Footer{
-        background-size: 100% 115%;
+        
         .logo{
             left: 1rem;
         }

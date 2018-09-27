@@ -181,6 +181,10 @@ a {
   .LandingPage .Landing_Page_Footer .col-1 {
     top: 10rem; } }
 
+@media all and (max-width: 1024px) {
+  .LandingPage .Landing_Page_Footer {
+    background-size: 150% 100%; } }
+
 @media all and (max-width: 972px) {
   .LandingPage .Landing_Page_Footer .col-1 {
     top: 7rem; } }
@@ -190,28 +194,26 @@ a {
     top: 7rem; } }
 
 @media all and (max-width: 840px) {
-  .LandingPage .Landing_Page_Footer {
-    background-size: 100% 115%; }
-    .LandingPage .Landing_Page_Footer .col-1 {
-      width: calc(100% - 40px);
-      float: left;
-      margin-left: 20px;
-      position: relative;
-      top: 26rem;
-      left: calc(0% - 20px + 20px);
-      position: relative; }
-    .LandingPage .Landing_Page_Footer .col-2 {
-      width: calc(100% - 40px);
-      float: left;
-      margin-left: 20px;
-      position: relative;
-      top: -18rem; }
-      .LandingPage .Landing_Page_Footer .col-2 img {
-        width: 50%;
-        min-width: 28rem; }
-    .LandingPage .Landing_Page_Footer .social-media {
-      display: none;
-      /*right: 50%;
+  .LandingPage .Landing_Page_Footer .col-1 {
+    width: calc(100% - 40px);
+    float: left;
+    margin-left: 20px;
+    position: relative;
+    top: 26rem;
+    left: calc(0% - 20px + 20px);
+    position: relative; }
+  .LandingPage .Landing_Page_Footer .col-2 {
+    width: calc(100% - 40px);
+    float: left;
+    margin-left: 20px;
+    position: relative;
+    top: -18rem; }
+    .LandingPage .Landing_Page_Footer .col-2 img {
+      width: 50%;
+      min-width: 28rem; }
+  .LandingPage .Landing_Page_Footer .social-media {
+    display: none;
+    /*right: 50%;
             transform: translate(50%);*/ } }
 
 @media all and (max-width: 730px) {
@@ -219,12 +221,10 @@ a {
     top: 22rem; } }
 
 @media all and (max-width: 630px) {
-  .LandingPage .Landing_Page_Footer {
-    background-size: 100% 115%; }
-    .LandingPage .Landing_Page_Footer .logo {
-      left: 1rem; }
-    .LandingPage .Landing_Page_Footer .col-1 {
-      top: 22rem; } }
+  .LandingPage .Landing_Page_Footer .logo {
+    left: 1rem; }
+  .LandingPage .Landing_Page_Footer .col-1 {
+    top: 22rem; } }
 
 @media all and (max-width: 440px) {
   .LandingPage .Landing_Page_Footer .col-1 {
