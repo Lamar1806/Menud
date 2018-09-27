@@ -19,7 +19,7 @@ class LandingPage extends Component{
         branchData: {
             landingPageTitle: 'Menud',
             landingPageDescriptions: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.has been the industry's standard dummy text ever since the 1500s",
-            plateListId: 68,
+            plateListId: 60,
             plateListAuthor: 'Random Author',
             plateListTitle: 'The Best Plate',            
             plateListDescription: 'The plate Description'
@@ -32,8 +32,27 @@ class LandingPage extends Component{
 
     componentDidMount(){
         console.log('landingpage data:', this.props.branchData);
-        if (typeof this.props.branchData.plateListId !== "undefined") {
-            this.setState({branchData: this.props.branchData.data_parsed});
+        let data = this.props.branchData.data_parsed;
+        if (data) {   
+            let expectedData = {
+                landingPageTitle: data.landingPageTitle,
+                landingPageDescriptions: data.landingPageDescriptions,
+                // plateListAuthor: data.plateListAuthor,
+                plateListTitle: data.plateListTitle,
+                plateListDescription: data.plateListDescription,
+                plateListId: data.plateListId
+            }
+
+            let values = Object.values(expectedData);
+            let invalid = values.map((val) => {
+                if(val === 'undefined'){
+                    return 'false';
+                }
+            });
+
+            if(invalid.length <= 0){
+                this.setState({branchData: expectedData});              
+            }
         }        
         //check device
         if (!(/Mobi|Android/i.test(navigator.userAgent))) {
@@ -52,8 +71,6 @@ class LandingPage extends Component{
             )
         }
     }
-
-    
 
     isMobile = {
         Android: function() {
@@ -83,58 +100,13 @@ class LandingPage extends Component{
             );
         }
     }
-
-    ////////////////////////////////////////////
-    // branchAction = (e) => {
-    //     if (props.deskTop) {
-    //         e.preventDefault();
-    //         //desktop
-    //         console.log('clicked: ', props.toggleModal);
-    //         toggleModal();
-    //         // sendSMS(e);
-    //     }else{
-    //         //mobile
-    //         deepLink(e);
-    //     }
-    // }
-
-    // deepLink = (e) => {
-    //     var linkData = {
-    //         campaign: 'content 123',
-    //         channel: 'facebook',
-    //         feature: 'dashboard',
-    //         stage: 'new user',
-    //         tags: [ 'tag1', 'tag2', 'tag3' ],
-    //         alias: '',
-    //         data: {
-    //           'custom_bool': true,
-    //           'custom_int': Date.now(),
-    //           'custom_string': 'hello',
-    //           '$og_title': 'Title',
-    //           '$og_description': 'Description',
-    //           '$og_image_url':'http://lorempixel.com/400/400'
-    //         }
-    //     };
-
-    //     Branch.deepview(linkData, function(err) {
-    //         if (err) {
-    //             throw err;
-    //         }
-    //         document.getElementById(props.pageTag).onClick = Branch.deepviewCta();
-    //     });
-    // }
-
-    
-    //////////////////////////////////////////
    
-    render() {
-        
+    render() {        
         return (
             <div className="LandingPage">
 
                 {this.displayModal()}
 
-                {console.log('userAgent:', navigator.userAgent)}
                 <Header title={this.state.branchData.landingPageTitle} description={this.state.branchData.landingPageDescriptions}/>
 
                 <PlateSection id={this.state.branchData.plateListId} author={this.state.branchData.plateListAuthor} 

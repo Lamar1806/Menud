@@ -492,6 +492,10 @@ a {
   .Plate_Section .Plate_Table .Plate_Container .Plate_HashTag {
     text-align: left;
     font-size: 1rem; }
+  .Plate_Section .Plate_Table .Plate_Container .No_Img {
+    width: 165px;
+    border: 1px solid #979797;
+    opacity: .2; }
 
 .Modal {
   position: fixed;
