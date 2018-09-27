@@ -496,6 +496,8 @@ a {
     width: 165px;
     border: 1px solid #979797;
     opacity: .2; }
+  .Plate_Section .Plate_Table .Plate_Container .empty {
+    background-color: white; }
 
 .Modal {
   position: fixed;

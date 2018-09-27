@@ -18,25 +18,26 @@ let Plate = (props) => {
         if(props.title != 'none'){
             plate = (
                 <Wrapper>
-                    <img className="Plate_Img" src={props.img} alt={props.title}/>
-                    <h3 className="Plate_Title">{shortenTitle(props.title)}</h3>
-                    <div className="Plate_Info">
-                        <img className="Timer_Img"src={timer} alt="timer"/> {props.prepTime} min
-                        <hr className="Plate_Hr"/>
-                        <p className="Plate_HashTag"> <i>{props.hashTag}</i></p>
+                    <div className="Plate_Container">
+                        <img className="Plate_Img" src={props.img} alt={props.title}/>
+                        <h3 className="Plate_Title">{shortenTitle(props.title)}</h3>
+                        <div className="Plate_Info">
+                            <img className="Timer_Img"src={timer} alt="timer"/> {props.prepTime}
+                            <hr className="Plate_Hr"/>
+                            <p className="Plate_HashTag"> <i>{props.hashTag}</i></p>
+                        </div>
                     </div>
                 </Wrapper>
             );
 
         }else{
+            let style = {
+                opacity: 0
+            }
             plate = ( 
-            <Wrapper>
-                <span className="Plate_Img No_Img" src={props.img} alt={props.title}/>
-                {/* <h3 className="Plate_Title">{shortenTitle(props.title)}</h3> */}
-                <div className="Plate_Info">
-                    <img className="Timer_Img"src={timer} alt="timer"/> {props.prepTime}
-                    <hr className="Plate_Hr"/>
-                    <p className="Plate_HashTag"> <i>{props.hashTag}</i></p>
+            <Wrapper>                
+               <div style={style} className="Plate_Container">
+                        
                 </div>
             </Wrapper>
             );
@@ -44,9 +45,7 @@ let Plate = (props) => {
         return plate;
     } 
     return (
-        <div className="Plate_Container">
-           {displayPlate()}
-        </div>
+           displayPlate()
     );
        
 }

@@ -37,13 +37,14 @@ class Plates extends Component{
                 let title = 'none';
                 let prepTime = 'N/A' + ' min';
                 let hasTags = '#N/A';
+
                 if(meal){
                     imgURL =  meal.imageUrl;                
                     title = meal.name;
-                    prepTime = '45';
+                    prepTime = 'PT45M';
                     hasTags = '#lunch #dinner #vegan';
                     if(meal.prepTime){
-                        prepTime = meal.prepTime + ' min';
+                        prepTime = meal.prepTime;
                     }
                 }            
                  

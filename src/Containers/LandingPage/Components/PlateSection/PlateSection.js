@@ -8,7 +8,7 @@ let PlateSection = (props) => {
             <Header id={props.id} author={props.author} title={props.title} 
                 description={props.description} modalToggle={props.modalToggle}
                 deskTop={props.deskTop}                
-            />                
+            />
             <Plates id={props.id} deskTop={props.deskTop} modalToggle={props.modalToggle}/>
         </div>
     );   
