@@ -29,7 +29,6 @@ let Plate = (props) => {
                     </div>
                 </Wrapper>
             );
-
         }else{
             let style = {
                 opacity: 0
