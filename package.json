@@ -20,7 +20,7 @@
     "compile-sass-w": "node-sass resources/sass/app.scss src/App.css -w"
   },
   "devDependencies": {
-    "node-sass": "^4.9.3",
+    "node-sass": "^4.13.1",
     "react-helmet": "^5.2.0"
   }
 }
